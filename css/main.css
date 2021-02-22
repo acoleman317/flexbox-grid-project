@@ -113,46 +113,57 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;  
 }
 
+header, main, footer {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+}
 
+header {
+    height: 7.5%;
+    font-size: 2em;
+    border-bottom: white solid 1px;
+}
 
-.content {
-  /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+main {
+    height: 10%;
+    font-size: 1.25em;
+    border-bottom: white solid 1px;
+    padding-bottom: 50px;
+}
+
+.flex-items {
   color: #fff;
+  
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.5em;
-  padding: 20px 20px;
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  padding: 0 10px;
+  width: 30%;
+  height: 200px;
+  text-align: justify;  
+  flex-basis: 25%;
 }
 
-#first-left, #second-center, #third-right {
-    display: flex;
+footer {
+    height: 3%;
+    font-size: 1.15em;
+    border-top: white solid 1px;
     justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    color: white;
-    padding: 20px 20px;
-    text-align: justify;
 }
+  /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+  
 
-#first-left {
-    border-right: white solid 2px;
-}
 
-#third-right {
-    border-left: white solid 2px;
-}
-
+ 
 
 
 
